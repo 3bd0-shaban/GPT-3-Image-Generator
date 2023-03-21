@@ -11,8 +11,8 @@ app.listen(port, () => {
     console.log(`Run successfully at port ${port}`)
 });
 app.use(cors({
-    origin: AllowedOrigins,
-    credentials: true
+    origin: '*',
+    credentials: true,
 }));
 
 app.use(express.json({ limit: '50mb' }));
