@@ -3,6 +3,7 @@ import express from "express";
 import errorMiddleware from './Middlewares/Error.js';
 import OpenAiRouter from "./Routes/OpenAiRoutes.js";
 import cors from 'cors'
+import AllowedOrigins from "./Origins.js";
 const port = 5000;
 const app = express();
 
@@ -10,7 +11,7 @@ app.listen(port, () => {
     console.log(`Run successfully at port ${port}`)
 });
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: AllowedOrigins,
     credentials: true
 }));
 
