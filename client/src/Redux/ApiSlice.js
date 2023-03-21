@@ -4,7 +4,7 @@ const url = process.env.REACT_APP_API_KEY;
 
 const baseQuery = fetchBaseQuery({
     baseUrl: url,
-    credentials: 'include',
+    // credentials: 'include',
     headers: {
         'Content-Type': 'application/json',
         'Access-Control-Allow-Credentials': true
