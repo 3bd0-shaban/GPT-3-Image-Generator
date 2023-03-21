@@ -5,10 +5,10 @@ const url = process.env.REACT_APP_API_KEY;
 const baseQuery = fetchBaseQuery({
     baseUrl: url,
     credentials: 'include',
-    // headers: {
-    //     'Content-Type': 'application/json',
-    //     'Access-Control-Allow-Credentials': true
-    // },
+    headers: {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Credentials': true
+    },
     prepareHeaders: (headers, { getState, endpoint }) => {
 
         const UPLOAD_ENDPOINTS = ['MakeVariations', 'uploadEndpoint2'];
