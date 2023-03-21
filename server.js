@@ -1,6 +1,6 @@
 import { OpenAIApi, Configuration } from "openai";
 import express from "express";
-import errorMiddleware from './Middlewares/Error.js';
+import errorMiddleware from './Middlewares/error.js';
 import OpenAiRouter from "./Routes/OpenAiRoutes.js";
 import cors from 'cors'
 import AllowedOrigins from "./Origins.js";
