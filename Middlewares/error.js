@@ -1,4 +1,4 @@
-import ErrorHandler from '../Utils/ErrorHandler.js'
+import ErrorHandler from '../Utils/errorHandler.js'
 const errorMiddleware = (err, req, res, next) => {
 
   let customError = {
